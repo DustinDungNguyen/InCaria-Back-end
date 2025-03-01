@@ -75,12 +75,12 @@ WSGI_APPLICATION = 'incaria.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'postgresql',
-        'NAME': 'incaria',
-        'USER': 'incaria',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'incaria', 
+        'USER': 'incaria', 
         'PASSWORD': 'incaria',
         'HOST': 'postgres',
-        'PORT' : '5432',
+        'PORT': '5432',
     }
 }
 
@@ -109,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'MST'
 
 USE_I18N = True
 
